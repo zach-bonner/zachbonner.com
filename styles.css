@@ -1,21 +1,59 @@
 body {
   margin: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fdfdfd;
   font-family: 'Open Sans', sans-serif;
+  background-color: #ECF0F1;
+  color: #2C3E50;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.message h1 {
+header {
+  background: #2C3E50;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 4em;
-  color: #333;
-  animation: fade 3s ease-in-out infinite alternate;
+  font-size: 3em;
+  margin: 0;
 }
 
-@keyframes fade {
-  from { opacity: 0.2; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+header p {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.about, .contact, .collaboration {
+  max-width: 900px;
+  margin: auto;
+}
+
+footer {
+  background-color: #2C3E50;
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+  margin-top: auto;
+}
+
+a {
+  color: #E74C3C;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
